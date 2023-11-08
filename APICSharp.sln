@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APICSharp", "APICSharp\APICSharp.csproj", "{2299A160-202A-4D69-91AF-E167C8AB58E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{D8FD75EF-F79B-43A7-B0ED-41AE9C3DECBD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2299A160-202A-4D69-91AF-E167C8AB58E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2299A160-202A-4D69-91AF-E167C8AB58E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2299A160-202A-4D69-91AF-E167C8AB58E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2299A160-202A-4D69-91AF-E167C8AB58E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FD75EF-F79B-43A7-B0ED-41AE9C3DECBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FD75EF-F79B-43A7-B0ED-41AE9C3DECBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FD75EF-F79B-43A7-B0ED-41AE9C3DECBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FD75EF-F79B-43A7-B0ED-41AE9C3DECBD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2E99830-E0A3-4754-B519-1EDDBAC03B9D}
+	EndGlobalSection
+EndGlobal
