@@ -30,7 +30,7 @@ namespace DAL
         [ForeignKey(name: "id_acceso")] // Para indicar a quien va a apuntar (PK de acceso)
         [Column(name: "id_acceso")] // Para indicar el nombre que se va a poner en la bd
         public long AccesoId { get; set; }
-        public Acceso Acceso { get; set; }
+        public Acceso? Acceso { get; set; }
 
         // Constructor
 
@@ -80,7 +80,7 @@ namespace DAL
         public string? descripcion_acceso { get; set; }
 
         // Collection
-        public ICollection<Usuario> Usuarios { get; set; }
+        public ICollection<Usuario>? Usuarios { get; set; }
 
         // Constructor
 
