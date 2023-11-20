@@ -44,10 +44,10 @@ namespace APICSharp.Controllers
         }
 
         // Update
-        [HttpPut]
-        public ActionResult<Usuario> UpdateUsuario(Usuario usuario)
+        [HttpPut("{id}")]
+        public ActionResult<Usuario> UpdateUsuario(long id, Usuario usuario)
         {
-            Usuario usu = _context.Usuarios.FirstOrDefault(u => u.dni_usuario == usuario.dni_usuario);
+            Usuario usu = _context.Usuarios.FirstOrDefault(u => u.id_usuario == id);
             if (usu == null)
                 return BadRequest("Usuario no encontrado");
 
@@ -62,7 +62,6 @@ namespace APICSharp.Controllers
             usu.fch_baja_usuario = usuario.fch_baja_usuario;
             usu.fch_alta_usuario = usuario.fch_alta_usuario;
             usu.AccesoId = usuario.AccesoId;
-            usu.Acceso = usuario.Acceso;
 
             _context.Update(usu);
             _context.SaveChanges();

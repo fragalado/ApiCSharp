@@ -30,13 +30,12 @@ namespace DAL
         [ForeignKey(name: "id_acceso")] // Para indicar a quien va a apuntar (PK de acceso)
         [Column(name: "id_acceso")] // Para indicar el nombre que se va a poner en la bd
         public long AccesoId { get; set; }
-        public Acceso? Acceso { get; set; }
+        public Acceso? Acceso { get;}
 
         // Constructor
 
-        public Usuario(long id_usuario, string dni_usuario, string? nombre_usuario, string? apellidos_usuario, string? tlf_usuario, string? email_usuario, string clave_usuario, bool? estaBloqueado_usuario, DateTime? fch_fin_bloqueo_usuario, DateTime? fch_alta_usuario, DateTime? fch_baja_usuario, long accesoId)
+        public Usuario(string dni_usuario, string? nombre_usuario, string? apellidos_usuario, string? tlf_usuario, string? email_usuario, string clave_usuario, bool? estaBloqueado_usuario, DateTime? fch_fin_bloqueo_usuario, DateTime? fch_alta_usuario, DateTime? fch_baja_usuario, long accesoId)
         {
-            this.id_usuario = id_usuario;
             this.dni_usuario = dni_usuario;
             this.nombre_usuario = nombre_usuario;
             this.apellidos_usuario = apellidos_usuario;
@@ -80,13 +79,12 @@ namespace DAL
         public string? descripcion_acceso { get; set; }
 
         // Collection
-        public ICollection<Usuario>? Usuarios { get; set; }
+        public ICollection<Usuario>? Usuarios { get;}
 
         // Constructor
 
-        public Acceso(long id_acceso, string codigo_acceso, string? descripcion_acceso)
+        public Acceso(string codigo_acceso, string? descripcion_acceso)
         {
-            this.id_acceso = id_acceso;
             this.codigo_acceso = codigo_acceso;
             this.descripcion_acceso = descripcion_acceso;
         }
